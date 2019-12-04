@@ -1,0 +1,56 @@
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: $sans-fonts;
+/*	color: $cDefaultForeground;
+	background-color: $cDefaultBackgroud;*/
+	width: 100%;
+	font-size: $px14; /* Don't forget to select the good vars import at '0.1 - Fonts' */
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: $px45;
+  line-height: 1.3em;
+	font-family: sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	color: $cDefaultForeground;
+}
+
+h2 {
+	font-size: $px28;
+  line-height: 1.2em;
+	color: $cDefaultForeground;
+
+}
+
+h3 {
+	font-size: $px24;
+	line-height: 1.2em;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: $cDefaultForeground;
+}
+
+h4 {
+	font-size: $px18;
+	line-height: 1.2em;
+}
+
+p {
+	font-size: $px14;
+}
+
+a {
+	text-decoration: none;
+	color: $cDefaultLink;
+}

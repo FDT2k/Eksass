@@ -1,0 +1,171 @@
+/* GENERALS */
+.btn{
+  background-color: white;
+  border: 1px solid $black;
+  padding:6px;
+  display: block;
+  border: none;
+  border-radius: 4px;
+}
+.btn.main {
+  padding: 10px 25px;
+  margin:10px 0px;
+  box-shadow: 0px 1px 1px 0px $ultra-light-gray;
+  text-transform: uppercase;
+  font-family: 'Lato', $sans-fonts;
+}
+
+.btn.third {
+  padding: 10px 5px;
+  margin: 10px 0px;
+  text-transform: uppercase;
+  font-family: "Lato", arial, verdana, tahoma, sans-serif;
+  font-weight: $lato-bold;
+}
+
+.main.green {
+  background-color: $main-green;
+  color: white;
+}
+
+.third.green {
+  color: $main-green;
+}
+
+.main.red {
+  background-color: $main-pink;
+  color: white;
+}
+
+.third.red {
+  color: $main-pink
+}
+
+
+label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: $open-semi;
+  display: block;
+  margin-top: 20px;
+}
+
+input,select {
+  width: 100%;
+  min-height: 56px;
+  box-shadow: none;
+  border: $text-gray 1px solid;
+  color: $text-gray;
+  border-radius: 4px;
+  margin: 4px 0px;
+  padding: 20px 12px 16px;
+}
+
+input.small{
+  width: 80px;
+  font-weight:bold;
+}
+
+input:focus,select:focus {
+  outline-color: $main-green;
+}
+
+input[disabled] {
+  border: none !important;
+  color: $fields-disabled;
+  font-style: $open-italic;
+}
+
+/* DATE PICKER */
+
+.react-date-picker {
+  width: 100%;
+}
+
+.react-date-picker__button {
+  width: 100%;
+  min-height: 56px;
+  margin: 4px 0px;
+  padding: 0px 12px;
+  color: $text-gray;
+  box-shadow: none;
+  background-color: $fields-gray;
+  border: none;
+  border-bottom: $text-gray 1px solid;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.react-date-picker__button__input {
+  align-items: center !important;
+}
+
+
+
+/* FABs (Floating Action Button) */
+
+/* Add FAB */
+.fab {
+  width: 56px;
+  margin: 10px;
+}
+
+.fab.add {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.fab-action-button {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: $main-pink;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.fab-action-button_icon {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+}
+
+/* LOGIN */
+
+button.login {
+  color: $text-gray;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  padding: 0px;
+}
+
+p#switchForm{
+  color: $text-gray;
+  text-align: center;
+  margin-top: 25px;
+  a, a:visited {
+    color: $main-green;
+  }
+  a {
+    border-bottom: solid 1px;
+    padding-bottom: 1px;
+  }
+}
+
+
+
+/* subject search */
+.subject_search_form {
+  input[type="text"]{
+    border-radius: 4px 0px 0px 4px;
+    border-right: none;
+  }
+}
+.subjects_search_submit {
+  border-radius: 0px 4px 4px 0px;
+  border-left: none;
+  width: 60px;
+  background: $ico-search;
+  background-color: $light-green;
+}

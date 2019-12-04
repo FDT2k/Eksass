@@ -7,6 +7,7 @@
 .flex-column {  -webkit-flex-direction: column;  -ms-flex-direction: column;  -webkit-box-orient: vertical;  -webkit-box-direction: normal;  flex-direction: column;}
 .column-reverse {  -webkit-flex-direction: column-reverse;  -ms-flex-direction: column-reverse;  -webkit-box-orient: vertical;  -webkit-box-direction: reverse;  flex-direction: column-reverse;}
 
+
 /* Wrap */
 .wrap {  -webkit-flex-wrap: wrap;  -ms-flex-wrap: wrap;  flex-wrap: wrap;}
 .no-wrap {  -webkit-flex-wrap: nowrap;  -ms-flex-wrap: nowrap;  flex-wrap: nowrap;}
