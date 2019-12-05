@@ -31,8 +31,8 @@
 	min-height: 100%;
 	margin: 0px auto;
 	@include flex-column;
-	@include just-center;
-	@include align-center;
+	@include flex-just('center');
+	@include flex-align('center');
 }
 
 
@@ -40,8 +40,8 @@
   width: 100%;
   margin: 0px auto;
   @include flex-column;
-  @include just-center;
-  @include align-center;
+  @include flex-just('center');
+	@include flex-align('center');
 }
 
 .content_container {

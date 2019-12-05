@@ -9,8 +9,8 @@
 html,
 body {
 	font-family: $sans-fonts;
-/*	color: $cDefaultForeground;
-	background-color: $cDefaultBackgroud;*/
+	color: $cDefaultForeground;
+	background-color: $cDefaultBackgroud;
 	width: 100%;
 	font-size: $px14; /* Don't forget to select the good vars import at '0.1 - Fonts' */
 	line-height: 1.5em;

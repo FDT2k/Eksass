@@ -1,0 +1,36 @@
+@media screen and (max-width: 320px)  {
+  /* fonts */
+
+
+  /* tags */
+  h3 {
+    font-size: $px12;
+  }
+  
+  /* classes */
+  .cover {
+    width:100vw;
+    margin: 0 0;
+  }
+
+
+  .main-title{
+      letter-spacing: 0.4em;
+      font-size: $px20;
+      padding-left: 20px;
+  }
+
+
+
+  .content_container {
+  	margin: 0px 0px;
+  	padding-top:50px;
+  }
+
+  .services {
+    max-width: 300px;
+  }
+
+  /* Forms */
+
+}

@@ -44,7 +44,6 @@
 .grow-5 { -webkit-flex-grow: 5; -ms-flex-positive: 5; -webkit-box-flex: 5; flex-grow: 5;  }
 
 /* scss */
-@mixin flex-grow($grow) { -webkit-flex-grow: $grow;  -ms-flex-positive: $grow;  -webkit-box-flex: $grow; flex-grow: $grow; }
 //.class { @include flex-grow(1); }
 
 /* sass */

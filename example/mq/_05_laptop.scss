@@ -1,0 +1,19 @@
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+
+    .services {
+      max-width: 100%;
+    }
+
+    .services > div{
+      width:100%;
+    }
+
+    section {
+      max-width: 100%
+    }
+
+    p{
+      word-wrap: break-word;
+      max-width:100%;
+    }
+}
