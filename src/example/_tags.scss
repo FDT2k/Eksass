@@ -19,6 +19,10 @@ h1 {
 h3 {
 	font-family: gibbs, sans-serif;
 	font-weight: 400;
+
+	@include for-small-phone-only{
+		font-size: $px12;
+	}
 }
 
 b{

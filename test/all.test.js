@@ -2,7 +2,7 @@ var sass = require('node-sass');
 
 var {sass_expect_no_error,sass_expect,sass_dump} = require('./utils')
 
-test ('all',()=>{
+test ('all',(done)=>{
 
-  sass.render({file: "src/all.scss"},sass_expect_no_error)
+  sass.render({file: "src/all.scss"},sass_expect_no_error(done))
 });

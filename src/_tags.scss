@@ -1,4 +1,4 @@
-
+$rembase: 14;
 *,
 *:after,
 *:before {
@@ -12,12 +12,12 @@ body {
 	color: $cDefaultForeground;
 	background-color: $cDefaultBackgroud;
 	width: 100%;
-	font-size: $px14; /* Don't forget to select the good vars import at '0.1 - Fonts' */
+	font-size: remify($rembase,14); /* Don't forget to select the good vars import at '0.1 - Fonts' */
 	line-height: 1.5em;
 }
 
 h1 {
-	font-size: $px45;
+	font-size: remify($rembase,45);
   line-height: 1.3em;
 	font-family: sans-serif;
 	font-weight: 100;
@@ -26,14 +26,14 @@ h1 {
 }
 
 h2 {
-	font-size: $px28;
+	font-size: remify($rembase,28);
   line-height: 1.2em;
 	color: $cDefaultForeground;
 
 }
 
 h3 {
-	font-size: $px24;
+	font-size: remify($rembase,24);
 	line-height: 1.2em;
 	font-family: sans-serif;
 	font-weight: 400;
@@ -42,12 +42,12 @@ h3 {
 }
 
 h4 {
-	font-size: $px18;
+	font-size: remify($rembase,18);
 	line-height: 1.2em;
 }
 
 p {
-	font-size: $px14;
+	font-size: remify($rembase,14);
 }
 
 a {
