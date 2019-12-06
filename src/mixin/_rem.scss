@@ -1,5 +1,5 @@
 @function remify($base,$size){
-  @return ($size/$base)rem;
+  @return ($size/$base)+0rem;
 }
 
 
