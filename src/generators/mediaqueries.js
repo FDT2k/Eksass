@@ -9,6 +9,8 @@ const LARGE_COMPUTER_MAX= null;
 const ORIENT_VERT = 1;
 const ORIENT_HORIZ = 2;
 
+const UNIT_PX='px'
+
 const sizes = {
   phone: [
     {
@@ -52,15 +54,36 @@ const sizes = {
       }
     },
     {
+      p:'small',
+      s:'and-up',
+      r:{
+
+        "min-width":SMALL_TABLET_MAX+1,
+      }
+    },
+    {
       p:'medium',
       r:{
         "min-width":SMALL_COMPUTER_MAX+1,
         "or":{
-          "aspect-ratio":"1/1"
+          "aspect-ratio":"1/1",
+          "max-width":SMALL_COMPUTER_MAX
         }
       }
     },
+    {
+      p:'medium',
+      s:'and-up',
+      r:{
+        "min-width":SMALL_COMPUTER_MAX+1,
+      }
+    },
   ],
+}
+
+
+const make_mixin = (suffix,prefix,rules)=>{
+
 }
 
 const kw = [
@@ -70,13 +93,16 @@ const kw = [
 const gen_mq_rule = (o) => {
   //let rule = `(min-width: ${mq.}px) and (max-width: 375px)`;
   return Object.keys(o).reduce( (acc,key)=>{
+
     if(o[key] !== null){
       if(kw.indexOf(key.toLowerCase()) > -1){
         acc.push(key.toLowerCase());
-        acc.push(gen_mq_rule(o[key]));
+        acc.push('('+gen_mq_rule(o[key])+')');
       }else{
+        acc.push('and')
         acc.push (`${key}: ${o[key]}px`)
       }
+      console.log(acc)
     }
     return acc;
   },[]).join(' ')
@@ -90,7 +116,7 @@ let res = Object.keys(sizes).map(item=>{
     let name = `mq-${item}-${p}-${s}`;
     let rule = gen_mq_rule(mq.r);
     return `@mixin ${name} {
-      @media screen and ${rule} { @content; };
+      @media screen ${rule} { @content; };
     }`
   }).join('\n');
 }).join('\n')

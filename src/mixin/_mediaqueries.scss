@@ -1,59 +1,24 @@
-$phone_width_small_min: 0;
-$phone_width_small_max: 320;
-$phone_width_medium_min: $phone_width_small_max+1;
-$phone_width_medium_max: 375;
-$phone_width_large_min: $phone_width_medium_max+1;
-$phone_width_large_max: 425;
-
-
-
-@mixin for-small-phone-only {
-  @media screen and (max-width: 320px) { @content; }
-}
-
-@mixin for-medium-phone {
-  @media screen and (min-width: 321px) and (max-width: 375px) { @content; };
-}
-
-@mixin for-large-phone {
-  @media screen and (min-width: 376px) and (max-width: 425px) { @content; };
-}
-
-@mixin for-tablet {
-  @media screen and (min-width: 426px) and (max-width: 768px) { @content; };
-}
-
-
-@mixin mq-for-phone-large-up {
-  @media screen and (min-width: 376px) { @content; };
-}
-
-@mixin for-laptop {
- @media screen and (min-width: 769px) and (max-width: 1024px) { @content; };
-}
-
-@mixin for-large-laptop {
- @media screen and (min-width: 1025px) and (max-width: 1440px) { @content; };
-}
-
-@mixin for-4k {
- @media screen and (min-width: 1441px) { @content; };
-}
-
-@mixin mq-print-only{
-  @media print { @content; };
-}
-/*
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) { @content; }
-}
-@mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
-}
-*/
+@mixin mq-phone-small-strict {
+      @media screen and min-width: 0px and max-width: 320px { @content; };
+    }
+@mixin mq-phone-medium-strict {
+      @media screen and min-width: 321px and max-width: 375px { @content; };
+    }
+@mixin mq-phone-large-strict {
+      @media screen and min-width: 376px and max-width: 425px { @content; };
+    }
+@mixin mq-tablet-small-strict {
+      @media screen and min-width: 426px and max-width: 1024px { @content; };
+    }
+@mixin mq-computer-small-strict {
+      @media screen and min-width: 1025px and max-width: 1280px { @content; };
+    }
+@mixin mq-computer-small-and-up {
+      @media screen and min-width: 1025px { @content; };
+    }
+@mixin mq-computer-medium-strict {
+      @media screen and min-width: 1281px or (and aspect-ratio: 1/1px and max-width: 1280px) { @content; };
+    }
+@mixin mq-computer-medium-and-up {
+      @media screen and min-width: 1281px { @content; };
+    }
