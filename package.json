@@ -1,7 +1,7 @@
 {
   "name": "@geekagency/eksass",
   "author": "Emilie Karsegard",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "src/",
   "devDependencies": {
     "@geekagency/composite-js": "^0.5.0",
