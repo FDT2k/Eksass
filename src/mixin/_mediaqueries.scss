@@ -1,24 +1,36 @@
-@mixin mq-phone-small-strict {
-      @media screen and min-width: 0px and max-width: 320px { @content; };
+@mixin mq-small-phone-strict {
+      @media screen and (min-width: 0px) and (max-width: 320px) { @content; };
     }
-@mixin mq-phone-medium-strict {
-      @media screen and min-width: 321px and max-width: 375px { @content; };
+@mixin mq-medium-phone-strict {
+      @media screen and (min-width: 321px) and (max-width: 375px) { @content; };
     }
-@mixin mq-phone-large-strict {
-      @media screen and min-width: 376px and max-width: 425px { @content; };
+@mixin mq-large-phone-strict {
+      @media screen and (min-width: 376px) and (max-width: 425px) { @content; };
     }
-@mixin mq-tablet-small-strict {
-      @media screen and min-width: 426px and max-width: 1024px { @content; };
+@mixin mq-small-phone-and-up {
+      @media screen and (min-width: 0px) { @content; };
     }
-@mixin mq-computer-small-strict {
-      @media screen and min-width: 1025px and max-width: 1280px { @content; };
+@mixin mq-medium-phone-and-up {
+      @media screen and (min-width: 321px) { @content; };
     }
-@mixin mq-computer-small-and-up {
-      @media screen and min-width: 1025px { @content; };
+@mixin mq-large-phone-and-up {
+      @media screen and (min-width: 376px) { @content; };
     }
-@mixin mq-computer-medium-strict {
-      @media screen and min-width: 1281px or (and aspect-ratio: 1/1px and max-width: 1280px) { @content; };
+@mixin mq-small-tablet-strict {
+      @media screen and (min-width: 426px) and (max-width: 1024px) { @content; };
     }
-@mixin mq-computer-medium-and-up {
-      @media screen and min-width: 1281px { @content; };
+@mixin mq-small-tablet-and-up {
+      @media screen and (min-width: 426px) { @content; };
+    }
+@mixin mq-small-computer-strict {
+      @media screen and (min-width: 1025px) and (max-width: 1280px) { @content; };
+    }
+@mixin mq-small-computer-and-up {
+      @media screen and (min-width: 1025px) { @content; };
+    }
+@mixin mq-medium-computer-strict {
+      @media screen and (min-width: 1281px) and (max-width: 1280px) { @content; };
+    }
+@mixin mq-medium-computer-and-up {
+      @media screen and (min-width: 1281px) { @content; };
     }

@@ -3,6 +3,10 @@
 }
 
 
+@function rem($size){
+  @return remify(10,$size);
+}
+
 @function rem14($size){
   @return remify(14,$size);
 }

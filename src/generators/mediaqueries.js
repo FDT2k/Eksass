@@ -34,6 +34,28 @@ const sizes = {
         "max-width":LARGE_PHONE_MAX,
       }
     }
+    ,
+    {
+      p:'small',
+      s:'and-up',
+      r:{
+        "min-width":0,
+      }
+    },
+
+    {
+      p:'medium',
+      s:'and-up',
+      r:{
+       "min-width":SMALL_PHONE_MAX+1,
+      }
+    },{
+      p:'large',
+      s:'and-up',
+      r:{
+       "min-width":MEDIUM_PHONE_MAX+1,
+      }
+    },
   ],
   tablet: [
     {
@@ -41,6 +63,13 @@ const sizes = {
       r:{
         "min-width":LARGE_PHONE_MAX+1,
         "max-width":SMALL_TABLET_MAX,
+      }
+    },
+    {
+      p:'small',
+      s:'and-up',
+      r:{
+        "min-width":LARGE_PHONE_MAX+1,
       }
     },
   ],
@@ -65,10 +94,7 @@ const sizes = {
       p:'medium',
       r:{
         "min-width":SMALL_COMPUTER_MAX+1,
-        "or":{
-          "aspect-ratio":"1/1",
-          "max-width":SMALL_COMPUTER_MAX
-        }
+        "max-width":SMALL_COMPUTER_MAX
       }
     },
     {
@@ -100,7 +126,7 @@ const gen_mq_rule = (o) => {
         acc.push('('+gen_mq_rule(o[key])+')');
       }else{
         acc.push('and')
-        acc.push (`${key}: ${o[key]}px`)
+        acc.push (`(${key}: ${o[key]}px)`)
       }
       console.log(acc)
     }
@@ -113,7 +139,7 @@ let res = Object.keys(sizes).map(item=>{
   return todo.map ( mq => {
     let s = mq.s || 'strict';
     let p = mq.p || '';
-    let name = `mq-${item}-${p}-${s}`;
+    let name = `mq-${p}-${item}-${s}`;
     let rule = gen_mq_rule(mq.r);
     return `@mixin ${name} {
       @media screen ${rule} { @content; };
