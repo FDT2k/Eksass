@@ -1,0 +1,16 @@
+@import '../mixin/grid';
+
+
+.grid {
+  @include grid();
+}
+.grid--justify-center {
+  @include  flex-just(center)
+}
+.grid--justify-start  { @include  flex-just(flex-start)  }
+.grid--justify-end    { @include  flex-just(flex-end) }
+
+
+.grid__column {
+  display:block;
+}
