@@ -13,4 +13,8 @@
 
 .grid__column {
   display:block;
+  flex:1;
+  margin-left: 0;
+	max-width: 100%;
+	width: 100%;
 }
