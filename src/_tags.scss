@@ -12,7 +12,7 @@ body {
 	color: $cDefaultForeground;
 	background-color: $cDefaultBackgroud;
 	width: 100%;
-	font-size: remify($rembase,14); /* Don't forget to select the good vars import at '0.1 - Fonts' */
+	font-size: remify($rembase,14);
 	line-height: 1.5em;
 }
 
