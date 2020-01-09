@@ -4,6 +4,10 @@
 
 
 @function rem($size){
+  @return remify($_EKSASS_REM_BASE,$size);
+}
+
+@function rem10($size){
   @return remify(10,$size);
 }
 
