@@ -22,11 +22,20 @@
 @mixin mq-small-tablet-and-up {
       @media screen and (min-width: 426px) { @content; };
     }
+@mixin mq-medium-tablet-and-up {
+      @media screen and (min-width: 600px) { @content; };
+    }
+@mixin mq-large-tablet-and-up {
+      @media screen and (min-width: 750px) { @content; };
+    }
 @mixin mq-small-computer-strict {
       @media screen and (min-width: 1025px) and (max-width: 1280px) { @content; };
     }
 @mixin mq-small-computer-and-up {
       @media screen and (min-width: 1025px) { @content; };
+    }
+@mixin mq-medium-computer-and-down {
+      @media screen and (max-width: 1281px) { @content; };
     }
 @mixin mq-medium-computer-strict {
       @media screen and (min-width: 1281px) and (max-width: 1280px) { @content; };
