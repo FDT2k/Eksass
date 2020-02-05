@@ -25,6 +25,14 @@
 @mixin mq-medium-tablet-and-up {
       @media screen and (min-width: 600px) { @content; };
     }
+/* used */
+@mixin mq-medium-tablet-and-down {
+      @media screen and (max-width: 600px) { @content; };
+    }
+@mixin mq-small-computer-and-down {
+      @media screen and (max-width: 1025px) { @content; };
+    }
+/* /used */
 @mixin mq-large-tablet-and-up {
       @media screen and (min-width: 750px) { @content; };
     }

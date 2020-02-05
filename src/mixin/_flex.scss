@@ -1,5 +1,3 @@
-
-
 @mixin flex() {
   display: -webkit-box;
   display: -moz-box;
@@ -15,7 +13,6 @@
   -webkit-order: $val;
   order: $val;
 }
-
 
 @mixin flex-direction($value: row) {
 	@if $value == row-reverse {
@@ -45,20 +42,17 @@
 @mixin flex-row-reverse() {
    @include flex;
    @include flex-direction(row-reverse)
-
 }
 
 
 @mixin flex-column() {
   @include flex;
   @include flex-direction(column)
-
 }
 
 @mixin flex-column-reverse() {
   @include flex;
   @include flex-direction(column-reverse)
-
 }
 
 @mixin parent-flex-wrap($value: nowrap) {
@@ -79,7 +73,6 @@
 
 @mixin flex-no-wrap() {
   @include parent-flex-wrap(nowrap)
-
 }
 
 @mixin flex-wrap-reverse() {
@@ -93,6 +86,9 @@
 	} @else if $value == flex-end {
 		-webkit-box-pack: end;
 		-ms-flex-pack: end;
+  } @else if $value == center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
 	} @else if $value == space-between {
 		-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
