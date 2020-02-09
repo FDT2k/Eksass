@@ -37,29 +37,6 @@
 	flex-direction: $value;
 }
 
-// /* still uselfull ?*/
-// @mixin flex-row() {
-//    @include flex;
-//    @include flex-direction(row)
-// }
-//
-// @mixin flex-row-reverse() {
-//    @include flex;
-//    @include flex-direction(row-reverse)
-// }
-//
-//
-// @mixin flex-column() {
-//   @include flex;
-//   @include flex-direction(column)
-// }
-//
-// @mixin flex-column-reverse() {
-//   @include flex;
-//   @include flex-direction(column-reverse)
-// }
-// /* /still usefull ?*/
-
 /* Wrap */
 @mixin flex-wrap-parent($value: nowrap) {
 	// No Webkit Box fallback.
@@ -72,20 +49,6 @@
 	}
 	flex-wrap: $value;
 }
-
-/* still uselfull ?*/
-// @mixin flex-wrap() {
-//   @include flex-wrap-parent(wrap)
-// }
-//
-// @mixin flex-nowrap() {
-//   @include flex-wrap-parent(nowrap)
-// }
-//
-// @mixin flex-wrap-reverse() {
-//   @include flex-wrap-parent(wrap-reverse)
-// }
-/* /still usefull ?*/
 
 /* Justify-Content */
 @mixin flex-just($value: flex-start) {
