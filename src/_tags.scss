@@ -8,46 +8,28 @@ $rembase: 14;
 
 html,
 body {
-	font-family: $sans-fonts;
-	color: $cDefaultForeground;
-	background-color: $cDefaultBackgroud;
 	width: 100%;
 	@include fluid-type(font-size, 320px, 1366px, 16px, 18px);
 	line-height: 1.5em;
 }
 
 h1 {
-	// font-size: remify($rembase,45);
   line-height: 1.3em;
-	font-family: sans-serif;
-	font-weight: 100;
-	font-style: normal;
-	color: $cDefaultForeground;
 }
 
 h2 {
-	// font-size: remify($rembase,28);
   line-height: 1.2em;
-	color: $cDefaultForeground;
-
 }
 
 h3 {
-	// font-size: remify($rembase,24);
 	line-height: 1.2em;
-	font-family: sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: $cDefaultForeground;
 }
 
 h4 {
-	// font-size: remify($rembase,18);
 	line-height: 1.2em;
 }
 
 p {
-	// font-size: remify($rembase,14);
 }
 
 a {
